@@ -5,6 +5,7 @@
         :source="source"
         :destination="destination"
         label="label"
+        :showSelectAll="false"
         @onChangeList="onChangeList"
       />
       <div class="row">

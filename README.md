@@ -49,7 +49,7 @@ In HTML template
     :source="source" 
     :destination="destination"
     label="name"
-    showSelectAll="false"
+    :showSelectAll="false"
     @onChangeList="onChangeList"
 />
 ```
