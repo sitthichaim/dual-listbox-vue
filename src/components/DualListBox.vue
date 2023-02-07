@@ -22,7 +22,7 @@
           class="list-item"
         >No results found</li>
       </ul>
-      <div class="bulk-action">
+      <div class="bulk-action" v-if="showSelectAll" >
         <div class="select-all" @click="selectAllSource">Select All</div>
         <div class="deselect-all" @click="deSelectAllSource">None</div>
       </div>
@@ -83,7 +83,7 @@
           class="list-item"
         >No results found</li>
       </ul>
-      <div class="bulk-action">
+      <div class="bulk-action" v-if="showSelectAll" >
         <div class="select-all" @click="selectAllDestination">Select All</div>
         <div class="deselect-all" @click="deSelectAllDestination">None</div>
       </div>
@@ -102,7 +102,8 @@ export default {
   props: {
     source: Array,
     destination: Array,
-    label: String
+    label: String,
+    showSelectAll: Boolean
   },
   data: function() {
     return {

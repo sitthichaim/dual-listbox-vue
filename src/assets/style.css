@@ -1,4 +1,4 @@
-*,
+              *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -58,7 +58,7 @@
 .list-box-wrapper .list-box-item .bulk-action .select-all {
   width: 100%;
   padding: 0.8rem;
-  background-color: #007bff;
+  background-color: #5d3d7b;
   color: #fff;
 }
 .list-box-wrapper .list-box-item .bulk-action .deselect-all {
@@ -95,8 +95,8 @@
   display: block;
   width: 100%;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #5d3d7b;
+  border-color: #5d3d7b;
   cursor: pointer;
 }
 .btn-action svg {
