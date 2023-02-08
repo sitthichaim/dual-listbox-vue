@@ -5,8 +5,10 @@
         :source="source"
         :destination="destination"
         label="label"
-        :showSelectAll="false"
         @onChangeList="onChangeList"
+        :showSelectAll="false"
+        :placeholderDestrination="'8hosj'"
+        :placeholderSource="'Search'"
       />
       <div class="row">
         <div class="col-sm-6">

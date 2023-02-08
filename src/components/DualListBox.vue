@@ -2,7 +2,7 @@
   <div class="list-box-wrapper">
     <div class="list-box-item">
       <div class="search-box">
-        <input v-model="searchSource" type="text" placeholder="Search" />
+        <input v-model="searchSource" type="text" :placeholder="placeholderSource" />
         <div
           v-if="searchSource"
           class="clear-search"
@@ -63,7 +63,7 @@
     </div>
     <div class="list-box-item">
       <div class="search-box">
-        <input v-model="searchDestination" type="text" placeholder="Search" />
+        <input v-model="searchDestination" type="text" :placeholder="placeholderDestrination" />
         <div
           v-if="searchDestination"
           class="clear-search"
@@ -103,7 +103,9 @@ export default {
     source: Array,
     destination: Array,
     label: String,
-    showSelectAll: Boolean
+    showSelectAll: Boolean,
+    placeholderSource: String,
+    placeholderDestrination: String,
   },
   data: function() {
     return {
